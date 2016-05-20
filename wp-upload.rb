@@ -5,7 +5,7 @@ require 'xmlrpc/Base64'
 require 'json'
 
 begin
-  pwfile = File.expand_path("~/. ulysses-wp-password.json")
+  pwfile = File.expand_path("~/.ulysses-wp-password.json")
   if !File.readable?(pwfile) then
     pwfile = File.expand_path("~/.upload-wp-password.json")
   end

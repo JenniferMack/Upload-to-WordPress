@@ -5,9 +5,9 @@ require 'xmlrpc/Base64'
 require 'json'
 
 begin
-  pwfile = File.expand_path("~/.upload-wp-password.json")
+  pwfile = File.expand_path("~/. ulysses-wp-password.json")
   if !File.readable?(pwfile) then
-    pwfile = File.expand_path("~/.ulysses-wp-password.json")
+    pwfile = File.expand_path("~/.upload-wp-password.json")
   end
   pwinfo = JSON.parse(File.open(pwfile).read)
 rescue => err
@@ -45,7 +45,8 @@ ARGV.each do |f|
       'wp.uploadFile',
       0,
       wordpress.user,
-      wordpress.password, data
+      wordpress.password,
+      data
     )
     puts "Uploaded: #{File.basename(result["url"])}"
   rescue => err
@@ -53,4 +54,3 @@ ARGV.each do |f|
     exit
   end
 end
-

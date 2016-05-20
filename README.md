@@ -6,6 +6,7 @@ Download the [.zip file][1], then unzip it.
 There will be two files (`Upload-to-Wordpress.zip` and `upload-wp-password.json`) that you need. The rest are optional.
 Place the `Upload-to-Wordpress.app` in a convenient location. The Applications folder in your home folder is a good location. Then right click on it and select `Open`. Click the `Open` button in the security warning box. Then click cancel when the posting confirmation box. This  happens because the app wasn’t created on your computer. 
 If you don’t want to bypass the security warning this way, open the app file in Automator. Then make a change like adding a space to a blank line and re-save it. Now it should be recognized as something made on your computer and be trusted to run.
+**Note:** if you’re already using my [Ulysses Post to WP app][2], this app will use the config file (`.ulysses-wp-password.json`) you already have.
 In the `upload-wp-password.json` file, change the placeholder information to what’s needed to log into your blog. Then save your changes.
 
 1. `yourWPblogURL.com`: the base URL of your WordPress blog.
@@ -19,8 +20,9 @@ If you’re using the Finder, hold the option key down while dragging to your ho
 ## Usage
 Just drag a file or files onto the app icon and enjoy not having to open up WordPress.
 ## Problems & Bugs
-Please [open an issue][2] if you find a problem or bug. If you want to contribute, [pull requests][3] are always welcome.
+Please [open an issue][3] if you find a problem or bug. If you want to contribute, [pull requests][4] are always welcome.
 
 [1]:	https://github.com/JenniferMack/Upload-to-WordPress/archive/master.zip "Direct .zip download."
-[2]:	https://github.com/JenniferMack/Upload-to-WordPress/issues "Issue tracker."
-[3]:	https://github.com/JenniferMack/Upload-to-WordPress/pulls "Create a pull request."
+[2]:	https://github.com/JenniferMack/Ulysses-post-to-WP
+[3]:	https://github.com/JenniferMack/Upload-to-WordPress/issues "Issue tracker."
+[4]:	https://github.com/JenniferMack/Upload-to-WordPress/pulls "Create a pull request."
